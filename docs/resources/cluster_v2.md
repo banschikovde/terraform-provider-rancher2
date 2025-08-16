@@ -1000,6 +1000,7 @@ see more information on [Resource Management for Pods and Containers](https://ku
 * `enabled` - (Optional, bool, default: false) Enable the authorized cluster endpoint.
 * `fqdn` - (Optional, string) FQDN for the authorized cluster endpoint. If one is entered, it should point to the downstream cluster.
 * `ca_certs` - (Optional, string) CA certs for the authorized cluster endpoint. It is only needed if there is a load balancer in front of the downstream cluster that is using an untrusted certificate. If you have a valid certificate, then nothing needs to be added to the CA Certificates field.
+* `use_internal_ca_certs` - (Optional, bool, default: false) Use the cluster's internally generated CA certificates for the authorized cluster endpoint. Conflicts with `ca_certs`.
 
 #### `upgrade_strategy`
 
