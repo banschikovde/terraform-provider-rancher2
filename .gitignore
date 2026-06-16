@@ -14,3 +14,10 @@ terraform.tfstate
 *.tfstate.*
 tf-*
 *.env
+*/*.tfvars
+*/*.pem
+*.tgz
+main.tf
+terraform-provider-rancher2
+node_modules
+.vscode
